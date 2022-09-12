@@ -1,2 +1,11 @@
 Flask
 gunicorn
+numpy
+pandas
+sklearn
+catboost
+PyYAML
+evidently
+dill
+matplotlib
+-e .
