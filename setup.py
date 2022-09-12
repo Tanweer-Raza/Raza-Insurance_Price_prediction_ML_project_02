@@ -32,7 +32,7 @@ setup(
     version= VERSION,
     author= AUTHOR,
     description= DESCRIPTION,
-    packages= find_packages(),
+    packages= find_packages(),   #["insurance_premium"]
     install_requires = get_requirements_list()
 )
 
