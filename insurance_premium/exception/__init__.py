@@ -1,10 +1,10 @@
 import os
 import sys
 
-class InsException(Exception):
+class InsurancePremiumExcecption(Exception):
     def __init__(self, error_message : Exception, error_details : sys):
         super().__init__(error_message)
-        self.error_message = InsException.get_detailed_error_message(error_message=error_message,error_details=error_details)
+        self.error_message = InsurancePremiumExcecption.get_detailed_error_message(error_message=error_message,error_details=error_details)
         
  
     @staticmethod
@@ -26,10 +26,13 @@ class InsException(Exception):
         """
 
         return error_message
+
+        
     def __str__(self):
         return self.error_message
 
     def __repr__(self) -> str:
-        return InsException.__name__.str()
+        return InsurancePremiumExcecption.__name__.str()
+    
     
 
