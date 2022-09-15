@@ -24,7 +24,6 @@ class InsurancePremiumExcecption(Exception):
         and exception block line number: [ {exception_block_line_number} ] 
         error message: [ {error_message} ]
         """
-
         return error_message
 
         

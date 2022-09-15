@@ -37,7 +37,7 @@ class DataIngestion:
             os.makedirs(raw_data_dir,exist_ok=True)
 
             
-            #Getting file name form url
+            #Getting file name from url
             insurance_file_name = os.path.basename(download_url)
 
             #complete file path
@@ -103,7 +103,7 @@ class DataIngestion:
                                         is_ingested=True,
                                         message= f"Data ingestion completed successfully"
                                         )
-            logging.info(f"Data injection artifacat: [{data_ingestion_artifact}]")
+            logging.info(f"Data ingestion artifacat: [{data_ingestion_artifact}]")
             return data_ingestion_artifact
 
         except Exception as e:

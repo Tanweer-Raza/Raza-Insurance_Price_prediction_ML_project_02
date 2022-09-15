@@ -5,8 +5,6 @@ from insurance_premium.constant import get_current_time_stamp
 import os
 
 LOG_DIR="insurance_logs"
-
-CURRENT_TIME_STAMP = f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
  
 def get_log_file_name():
     return f"log_{get_current_time_stamp()}.log" 
