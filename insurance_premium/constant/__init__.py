@@ -50,15 +50,20 @@ DATA_TRANSFORMATION_PREPROCESSING_DIR_KEY = "preprocessing_dir"
 DATA_TRANSFORMATION_PREPROCESSED_FILE_NAME_KEY = "preprocessed_object_file_name"
 
 #Schema related variables
-COLUMN_TOTAL_ROOMS = "total_rooms"
-COLUMN_POPULATION = "population"
-COLUMN_HOUSEHOLDS = "households"
-COLUMN_TOTAL_BEDROOM = "total_bedrooms"
+COLUMN_AGE = "age"
+COLUMN_SEX = "sex"
+COLUMN_BMI = "bmi"
+COLUMN_CHILDREN = "children"
+COLUMN_SMOKER= "smoker"
+COLUMN_REGION = "region"
 DATASET_SCHEMA_COLUMNS_KEY = "columns"
+
 TARGET_COLUMN_KEY = "target_column"
 
 NUMERICAL_COLUMN_KEY = "numerical_columns"
 CATEGORICAL_COLUMN_KEY = "categorical_columns"
+
+DOMAIN_VALUES_COLUMN_KEY = "domain_value"
 
 
 # Model Training related variables

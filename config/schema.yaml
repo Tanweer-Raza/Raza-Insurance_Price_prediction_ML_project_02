@@ -5,7 +5,7 @@ columns :
   children : int
   smoker : object
   region : object
-  expense : float
+  expenses : float
 
 
 numrical_columns :
@@ -23,15 +23,16 @@ target_column : expense
 
 domain_value :
   region:
-    -southwest
-    -southeast
-    -northwest
-    -northeast
+    - southeast
+    - northeast
+    - northwest
+    - southwest
+  
+  smoker :
+    - "yes"
+    - "no"
   
   sex :
   - male
   - female
 
-  smoker :
-  - yes
-  - no
