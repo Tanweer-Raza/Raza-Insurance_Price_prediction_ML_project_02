@@ -66,8 +66,8 @@ class DataIngestion:
 
             insurance_data_frame["age_cat"] = pd.cut(
                 insurance_data_frame["age"],
-                bins = [10,30,50,70],
-                labels=[1,2,3]   
+                bins = [10,20,30,40,50,60,70],
+                labels=[1,2,3,4,5,6]   
             )
             
             logging.info(f"Spliting data into train and test")

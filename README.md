@@ -109,3 +109,16 @@ Install ipykernel
 ```
 pip install ipykernel
 ```
+
+Hypothesis Testing
+```
+Here in this project while re-training our model, Hypothesis testing has been used to compare the distribution of the dataset from the old dataset to the new dataset. 
+
+ks_2samp from scipy.stats has been used here for hypothesis testing .
+from ks_2samp we will get p value and from that we will get to know our p-test or Null Hypothesis testing.
+
+Null : Two dataset are from same distribution.
+Alternate : Two dataset are not from the same distributiion
+
+if p >= 0.5 then we have sufficient proof that null hypothesis is True.
+```

@@ -9,8 +9,12 @@ def main():
 
 
     ### Testing data_validation_config written in configuration file
-        data_validation_config = Configuration().get_data_validation_config()
-        print(data_validation_config)
+        # data_validation_config = Configuration().get_data_validation_config()
+        # print(data_validation_config)
+
+    ### Testinf data_validation
+        pipeline = Pipeline()
+        pipeline.run_pipeline()
 
 
     except Exception as e:

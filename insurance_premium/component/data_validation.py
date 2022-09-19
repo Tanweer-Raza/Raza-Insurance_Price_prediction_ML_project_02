@@ -67,6 +67,25 @@ class DataValidation:
 
     
     def validate_dataset_schema(self)->bool:
+        
+
+            #validate training and testing dataset using schema file
+            #1. Number of Column
+            #2. Check the value of domain values
+            #   sex:
+            #     - male
+            #     - female
+
+            #   region:
+            #     - northeast
+            #     - northwest
+            #     - southeast
+            #     - southwest
+            
+            #   smoker:
+            #     - yes
+            #     - no
+            #3. Check column names
         try:
             validation_status = False
 
@@ -102,24 +121,6 @@ class DataValidation:
                 pass
             return validation_status
 
-
-            #validate training and testing dataset using schema file
-            #1. Number of Column
-            #2. Check the value of domain values
-            #   sex:
-            #     - male
-            #     - female
-
-            #   region:
-            #     - northeast
-            #     - northwest
-            #     - southeast
-            #     - southwest
-            
-            #   smoker:
-            #     - yes
-            #     - no
-            #3. Check column names
         except Exception as e:
             raise InsurancePremiumExcecption(e,sys) from e
 
