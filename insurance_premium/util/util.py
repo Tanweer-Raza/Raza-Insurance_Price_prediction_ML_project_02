@@ -56,9 +56,9 @@ def save_numpy_array_data(file_path: str, array: np.array):
 
 def load_numpy_array_data(file_path: str) -> np.array:
     """
-    load numpy array data from file
+    load numpy array data from file.
     file_path: str location of file to load
-    return: np.array data loaded
+    return: np.array data type loaded
     """
     try:
         with open(file_path, 'rb') as file_obj:
@@ -93,7 +93,8 @@ def load_object(file_path:str):
 
 
 
-#Checking data type and converting required one by using information from schema.yaml   
+#Checking data type and converting required one by using information from schema.yaml
+# i.e basically we will do typecasting in data transformation   
 def load_data(file_path:str, schema_file_path: str) -> pd.DataFrame:
     try:
 

@@ -9,6 +9,20 @@
 4. [GIT cli](https://git-scm.com/downloads)
 5. [GIT Documentation](https://git-scm.com/docs/gittutorial)
 
+## Insurance Premium Prediction
+Life cycle of Machine learning Project**
+```
+* Understanding the Problem Statement
+* Data Collection
+* Exploratory data analysis
+* Data Cleaning
+* Data Pre-Processing
+* Model Training 
+* Choose best model
+```
+
+Starting with the project :
+
 ##Creating Conda environment
 ```
 conda create -p <environment_name(here venv used)> python==3.7 -y
@@ -121,4 +135,8 @@ Null : Two dataset are from same distribution.
 Alternate : Two dataset are not from the same distributiion
 
 if p >= 0.5 then we have sufficient proof that null hypothesis is True.
+
+
+
+Here evidently has been used which has done our tast in simple steps.Same concepts has been used there.
 ```

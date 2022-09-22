@@ -12,7 +12,11 @@ def main():
         # data_validation_config = Configuration().get_data_validation_config()
         # print(data_validation_config)
 
-    ### Testinf data_validation
+    ### Testing data_validation
+        # pipeline = Pipeline()
+        # pipeline.run_pipeline()
+
+    ### Testing data_transformation
         pipeline = Pipeline()
         pipeline.run_pipeline()
 
