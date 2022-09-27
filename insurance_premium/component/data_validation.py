@@ -1,4 +1,3 @@
-from msilib import schema
 from insurance_premium.constant import COLUMN_REGION, COLUMN_SEX, COLUMN_SMOKER, DATASET_SCHEMA_COLUMNS_KEY, DOMAIN_VALUES_COLUMN_KEY
 from insurance_premium.logger import logging
 from insurance_premium.exception import InsurancePremiumExcecption
