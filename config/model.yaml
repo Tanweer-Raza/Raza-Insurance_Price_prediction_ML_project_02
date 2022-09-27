@@ -1,0 +1,40 @@
+grid_search:
+  class: GridSearchCV
+  module: sklearn.model_selection
+  params:
+    cv: 3
+    verbose: 2
+model_selection:
+  module_0:
+    class: CatBoostRegressor
+    module: catboost
+    params:
+      learning_rate: 0.1
+    search_param_grid:
+      learning_rate:
+      - 0.1
+      - 0.01
+  module_1:
+    class: RandomForestRegressor
+    module: sklearn.ensemble
+    params:
+      min_samples_leaf: 2
+      max_features: 'sqrt'
+      n_estimators: 100
+      max_depth: 2
+    search_param_grid:
+      min_samples_leaf:
+      - 2
+      - 8
+      max_features:
+      - 5
+      - "sqrt"
+      - "log2"
+      n_estimators:
+      - 100
+    
+      max_depth:
+      - 5
+     
+
+
