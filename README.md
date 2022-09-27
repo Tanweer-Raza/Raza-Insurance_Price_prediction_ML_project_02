@@ -1,7 +1,7 @@
 # Raza-Insurance_Price_prediction_ML_project_02
 
 Application url :
-[Housing predictor](https://insurance-price-pred.herokuapp.com/)
+[Insurance Premium predictor](https://insurance-price-pred.herokuapp.com/)
 
 ### Software and account requirements. 
 
