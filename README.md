@@ -161,4 +161,22 @@ From these above models after hyperparameter optimization we selected Top two mo
 
 ## 📷 Application Screenshots
 
+### **This is the screenshot of the Home Webpage which has been done using the Flask**
+![webpage](static/Home_page.png)
+
+### **This is the screenshot of the webpage which gets user input for prediction**
+![webpage](static/estimator_user_input.png)
+
+### **This is the screenshot of the page which shows history of the experiment that had run previously and currently running status**
+#### Can be used as experiment history Tracking
+![experiment history](static/Experiment_history.png)
+
+### **This is the screenshot of the page in which user can change the model parameters for the experiment**
+![model parameters](static/update_model_config.png)
+
+### **This is the screenshot of the page in which user can train the model with update new parameters in Update Model Config section**
+![model parameters](static/Model_training.png)
+
+## Conclusion
+- This Project can be used in real-life by Medical Insurance Companies to predict the Health risk involved for a patient and give an estimate for Insurance Premium for the particular customer.
 
