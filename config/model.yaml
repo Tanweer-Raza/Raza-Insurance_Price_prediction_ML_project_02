@@ -2,7 +2,7 @@ grid_search:
   class: GridSearchCV
   module: sklearn.model_selection
   params:
-    cv: 3
+    cv: 5
     verbose: 2
 model_selection:
   module_0:
@@ -14,6 +14,9 @@ model_selection:
       learning_rate:
       - 0.1
       - 0.01
+      - 0.03
+      - 0.05
+
   module_1:
     class: RandomForestRegressor
     module: sklearn.ensemble
@@ -26,15 +29,23 @@ model_selection:
       min_samples_leaf:
       - 2
       - 8
+      - 12
+      - 14
       max_features:
       - 5
+      - 7
       - "sqrt"
       - "log2"
       n_estimators:
       - 100
+      - 300
+      - 500
+      - 700
     
       max_depth:
       - 5
+      - 7
+      - 9
      
 
 

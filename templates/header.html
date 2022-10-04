@@ -59,11 +59,14 @@ table-layout: fixed;
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="/">Insurance Health Risk Predictor</a>
+            <a class="navbar-brand" href="/">Health Insurance Premium Predictor</a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if 'predict' in request.path %} active {% endif %}" href="/predict">Estimate Insurance Premium Amount</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if 'log' in request.path %} active {% endif %}" href="/logs">View Logs</a>
@@ -73,9 +76,6 @@ table-layout: fixed;
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if 'saved_models' in request.path %} active {% endif %}" href="/saved_models">View Trained Model</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if 'predict' in request.path %} active {% endif %}" href="/predict">Estimate Health Risk Amount</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if 'predict' in request.path %} active {% endif %}" href="/view_experiment_hist">Experiment History</a>
@@ -95,6 +95,14 @@ table-layout: fixed;
     
 
             <ul class=" list-group " style="    margin-left: 5%;margin-top: 5%;">
+                <a href="/predict" class="list-group-item list-group-item-action {% if 'predict' in request.path %} active {% endif %}" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Estimate Insurance Premium Amount</h5>
+                      <small>Estimate premium Amount</small>
+                    </div>
+                    <p class="mb-1">Submit the form to get estimated price for Health Risk for Medical Insurance.</p>
+                    <small></small>
+                  </a>
                 <a href="/logs" class="list-group-item list-group-item-action {% if 'log' in request.path %} active {% endif %}" aria-current="true">
                     <div class="d-flex w-100 justify-content-between">
                       <h5 class="mb-1">View Logs</h5>
@@ -119,20 +127,12 @@ table-layout: fixed;
                     <p class="mb-1">All model file can be downloaded.</p>
                     <small></small>
                   </a>
-                  <a href="/predict" class="list-group-item list-group-item-action {% if 'predict' in request.path %} active {% endif %}" aria-current="true">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">Estimate Healthrisk Amount</h5>
-                      <small>Estimate Insurance Healthrisk Amount</small>
-                    </div>
-                    <p class="mb-1">Submit the form to get estimated price for Health Risk for Medical Insurance.</p>
-                    <small></small>
-                  </a>
                   <a href="/train" class="list-group-item list-group-item-action {% if 'train' in request.path %} active {% endif %}" aria-current="true">
                     <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">Train Insurance Health Risk Estimator</h5>
-                      <small>Initiate model training</small>
+                      <h5 class="mb-1">Train Health Insurance Premium Estimator Model.</h5>
+                      <small>Initiate Model Training</small>
                     </div>
-                    <p class="mb-1">Model training can be initiaed using his section.</p>
+                    <p class="mb-1">Model training can be initiaed using this section.</p>
                     <small></small>
                   </a>
                   <a href="/update_model_config" class="list-group-item list-group-item-action {% if 'update_model_config' in request.path %} active {% endif %}" aria-current="true">
@@ -140,7 +140,7 @@ table-layout: fixed;
                       <h5 class="mb-1">Update Model Config</h5>
                       <small>Change model configuration</small>
                     </div>
-                    <p class="mb-1">Can modify model configuration</p>
+                    <p class="mb-1">Can modify model configuration using this section</p>
                     <small></small>
                   </a>
                 
