@@ -178,5 +178,8 @@ From these above models after hyperparameter optimization we selected Top two mo
 ![model parameters](static/Model_training.png)
 
 ## Conclusion
-- This Project can be used in real-life by Medical Insurance Companies to predict the Health risk involved for a patient and give an estimate for Insurance Premium for the particular customer.
+
+This Project which predicts the amount of the insurance premium based on different parameters (like Age,BMI etc) for a particular person can be implemented practically and used by Insurance Comapnies in real life. This will help the 
+companies to predict the estimate for Insurance premium for a particular person by considering the risk involved for that particular person. 
+
 
