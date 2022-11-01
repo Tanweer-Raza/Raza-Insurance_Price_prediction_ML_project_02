@@ -61,9 +61,9 @@ The dataset that I am using for the task of health insurance premium prediction 
 2. `sex` : object - gender of the person
 3. `bmi` : float - Body Mass Index of the person
 4. `children` : int - how many children the person is having
-5. `smoker` : object - how many children the person is having
+5. `smoker` : object - whether the person smoke or not
 6. `region` : object - the region where the person lives
-7. `expenses` : float - the region where the person lives
+7. `expenses` : float - the prememium amount of the insurance policy
 
 
 numerical_columns :
